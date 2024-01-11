@@ -6,12 +6,61 @@ package com.ingramcontent.model;
 
 public class WalmartProductConfig implements java.io.Serializable {
 
-    static final long serialVersionUID = 1L;
+	static final long serialVersionUID = 1L;
 
-    public WalmartProductConfig() {
-    }
+	private com.ingramcontent.model.ProductConfigRule productConfigRule;
+	private com.ingramcontent.model.InventoryConfigRule inventoryConfigRule;
+	private com.ingramcontent.model.ReviewConfigRule reviewConfigRule;
+	private com.ingramcontent.model.FeedStatusConfigRule feedStatusConfigRule;
 
+	public WalmartProductConfig() {
+	}
 
+	public com.ingramcontent.model.ProductConfigRule getProductConfigRule() {
+		return this.productConfigRule;
+	}
 
+	public void setProductConfigRule(
+			com.ingramcontent.model.ProductConfigRule productConfigRule) {
+		this.productConfigRule = productConfigRule;
+	}
+
+	public com.ingramcontent.model.InventoryConfigRule getInventoryConfigRule() {
+		return this.inventoryConfigRule;
+	}
+
+	public void setInventoryConfigRule(
+			com.ingramcontent.model.InventoryConfigRule inventoryConfigRule) {
+		this.inventoryConfigRule = inventoryConfigRule;
+	}
+
+	public com.ingramcontent.model.ReviewConfigRule getReviewConfigRule() {
+		return this.reviewConfigRule;
+	}
+
+	public void setReviewConfigRule(
+			com.ingramcontent.model.ReviewConfigRule reviewConfigRule) {
+		this.reviewConfigRule = reviewConfigRule;
+	}
+
+	public com.ingramcontent.model.FeedStatusConfigRule getFeedStatusConfigRule() {
+		return this.feedStatusConfigRule;
+	}
+
+	public void setFeedStatusConfigRule(
+			com.ingramcontent.model.FeedStatusConfigRule feedStatusConfigRule) {
+		this.feedStatusConfigRule = feedStatusConfigRule;
+	}
+
+	public WalmartProductConfig(
+			com.ingramcontent.model.ProductConfigRule productConfigRule,
+			com.ingramcontent.model.InventoryConfigRule inventoryConfigRule,
+			com.ingramcontent.model.ReviewConfigRule reviewConfigRule,
+			com.ingramcontent.model.FeedStatusConfigRule feedStatusConfigRule) {
+		this.productConfigRule = productConfigRule;
+		this.inventoryConfigRule = inventoryConfigRule;
+		this.reviewConfigRule = reviewConfigRule;
+		this.feedStatusConfigRule = feedStatusConfigRule;
+	}
 
 }

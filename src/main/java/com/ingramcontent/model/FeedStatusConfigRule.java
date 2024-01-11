@@ -6,12 +6,23 @@ package com.ingramcontent.model;
 
 public class FeedStatusConfigRule implements java.io.Serializable {
 
-    static final long serialVersionUID = 1L;
+	static final long serialVersionUID = 1L;
 
-    public FeedStatusConfigRule() {
-    }
+	private java.lang.Integer maxRetires;
 
+	public FeedStatusConfigRule() {
+	}
 
+	public java.lang.Integer getMaxRetires() {
+		return this.maxRetires;
+	}
 
+	public void setMaxRetires(java.lang.Integer maxRetires) {
+		this.maxRetires = maxRetires;
+	}
+
+	public FeedStatusConfigRule(java.lang.Integer maxRetires) {
+		this.maxRetires = maxRetires;
+	}
 
 }
